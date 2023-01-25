@@ -17,6 +17,7 @@ final class ProfileViewModel:  ObservableObject {
         return encoder
     }
 
+    @Published var error: Error?
     @Published private(set) var userJSON: String
 
     init(userJSON: String = "") {
@@ -24,12 +25,12 @@ final class ProfileViewModel:  ObservableObject {
     }
 
     func getUser() async {
-        let userModel = await Lytics.shared.user
         do {
+            let userModel = try await Lytics.shared.getProfile()
             let userData = try Self.encoder.encode(userModel)
             userJSON = String(decoding: userData, as: UTF8.self)
         } catch {
-            print("Error encoding user model: \(error)")
+            self.error = error
         }
     }
 }
