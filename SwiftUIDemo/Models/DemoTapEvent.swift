@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DemoTapEvent: Encodable {
+struct DemoTapEvent: Codable {
     var artistID: Int
     var eventID: Int
 }

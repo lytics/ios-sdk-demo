@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct DemoDetailScreenEvent: Encodable {
+struct DemoDetailScreenEvent: Codable {
     let artistName: String
 }
