@@ -36,6 +36,7 @@ struct EventsView: View {
 
                         Spacer()
                     }
+                    .padding(.top, 16)
 
                     ForEach(viewModel.events) { event in
                         NavigationLink(value: event) {
