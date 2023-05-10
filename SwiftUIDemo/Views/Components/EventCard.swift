@@ -16,9 +16,7 @@ struct EventCard: View {
 
     var body: some View {
         VStack(spacing: 16) {
-            RemoteImage(url: imageURL, contentMode: .fill)
-                .frame(height: 120, alignment: .top)
-                .clipped()
+            RemoteImage(url: imageURL, contentMode: .fit)
 
             VStack(alignment: .leading) {
                 VStack(alignment: .leading, spacing: 4) {
