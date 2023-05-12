@@ -17,6 +17,7 @@ struct EventCard: View {
     var body: some View {
         VStack(spacing: 16) {
             RemoteImage(url: imageURL, contentMode: .fit)
+                .aspectRatio(CGSize(width: 2516, height: 1418), contentMode: .fit)
 
             VStack(alignment: .leading) {
                 VStack(alignment: .leading, spacing: 4) {
