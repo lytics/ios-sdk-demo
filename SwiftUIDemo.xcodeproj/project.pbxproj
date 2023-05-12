@@ -53,6 +53,7 @@
 		C9DE3E52290861680047F502 /* LocalEventsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E51290861680047F502 /* LocalEventsHeader.swift */; };
 		C9DE3E552908CBA10047F502 /* DemoTapEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E542908CBA10047F502 /* DemoTapEvent.swift */; };
 		C9E2EC3A2A0EB33B00E915BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E2EC392A0EB33B00E915BC /* Launch Screen.storyboard */; };
+		C9E2EC3C2A0EBA5600E915BC /* String+LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E2EC3B2A0EBA5600E915BC /* String+LocalizedError.swift */; };
 		C9F44BD32912B9E6006998BD /* DemoAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F44BD22912B9E6006998BD /* DemoAttributes.swift */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,7 @@
 		C9DE3E51290861680047F502 /* LocalEventsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEventsHeader.swift; sourceTree = "<group>"; };
 		C9DE3E542908CBA10047F502 /* DemoTapEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTapEvent.swift; sourceTree = "<group>"; };
 		C9E2EC392A0EB33B00E915BC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C9E2EC3B2A0EBA5600E915BC /* String+LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizedError.swift"; sourceTree = "<group>"; };
 		C9F44BD22912B9E6006998BD /* DemoAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -297,6 +299,7 @@
 				C9DE3E4D29085A330047F502 /* Collection+Utils.swift */,
 				C94BF00829097480007E1C25 /* Color+Assets.swift */,
 				C9DE3E40290735FA0047F502 /* Image+Assets.swift */,
+				C9E2EC3B2A0EBA5600E915BC /* String+LocalizedError.swift */,
 				C94BF00429096EA3007E1C25 /* Task+Utils.swift */,
 				C9C7602729819D32002E03D3 /* View+ErrorAlert.swift */,
 			);
@@ -457,6 +460,7 @@
 				C9DE3E2829071D290047F502 /* EventsViewModel.swift in Sources */,
 				C9DE3E1C290717F30047F502 /* ProfileView.swift in Sources */,
 				C9DE3E2E29071E3E0047F502 /* RegisterViewModel.swift in Sources */,
+				C9E2EC3C2A0EBA5600E915BC /* String+LocalizedError.swift in Sources */,
 				C9DE3E2A29071E2D0047F502 /* EventDetailViewModel.swift in Sources */,
 				C9DE3E3E290734AB0047F502 /* EventService.swift in Sources */,
 				C94BF00929097480007E1C25 /* Color+Assets.swift in Sources */,

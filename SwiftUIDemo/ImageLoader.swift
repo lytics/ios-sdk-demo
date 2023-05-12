@@ -18,7 +18,7 @@ struct ImageLoaderKey: EnvironmentKey {
 extension EnvironmentValues {
     var imageLoader: ImageLoader {
         get { self[ImageLoaderKey.self] }
-        set { self[ImageLoaderKey.self ] = newValue}
+        set { self[ImageLoaderKey.self] = newValue }
     }
 }
 
@@ -33,6 +33,8 @@ extension ImageLoader {
         .init(
             fetch: { url in
                 switch url.lastPathComponent {
+                case "2":
+                    return Image.maroon5
                 case "3":
                     return Image.aliciaKeys
                 case "4":
@@ -40,7 +42,7 @@ extension ImageLoader {
                 case "5":
                     return Image.dojaCat
                 default:
-                    return Image.maroon5
+                    throw "404"
                 }
             }
         )
