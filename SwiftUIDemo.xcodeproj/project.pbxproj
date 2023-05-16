@@ -52,6 +52,8 @@
 		C9DE3E5029085BD80047F502 /* ChecklistToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E4F29085BD80047F502 /* ChecklistToggleStyle.swift */; };
 		C9DE3E52290861680047F502 /* LocalEventsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E51290861680047F502 /* LocalEventsHeader.swift */; };
 		C9DE3E552908CBA10047F502 /* DemoTapEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E542908CBA10047F502 /* DemoTapEvent.swift */; };
+		C9E2EC3A2A0EB33B00E915BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E2EC392A0EB33B00E915BC /* Launch Screen.storyboard */; };
+		C9E2EC3C2A0EBA5600E915BC /* String+LocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E2EC3B2A0EBA5600E915BC /* String+LocalizedError.swift */; };
 		C9F44BD32912B9E6006998BD /* DemoAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F44BD22912B9E6006998BD /* DemoAttributes.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C94BDF3428E923A9008FB4DE /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94BDF3428E923A9008FB4DE /* Lytics SDK Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lytics SDK Showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94BDF3728E923A9008FB4DE /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		C94BDF3B28E923AB008FB4DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C94BDF3E28E923AB008FB4DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -121,6 +123,8 @@
 		C9DE3E4F29085BD80047F502 /* ChecklistToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistToggleStyle.swift; sourceTree = "<group>"; };
 		C9DE3E51290861680047F502 /* LocalEventsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEventsHeader.swift; sourceTree = "<group>"; };
 		C9DE3E542908CBA10047F502 /* DemoTapEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTapEvent.swift; sourceTree = "<group>"; };
+		C9E2EC392A0EB33B00E915BC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C9E2EC3B2A0EBA5600E915BC /* String+LocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizedError.swift"; sourceTree = "<group>"; };
 		C9F44BD22912B9E6006998BD /* DemoAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,7 +170,7 @@
 		C94BDF3528E923A9008FB4DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C94BDF3428E923A9008FB4DE /* SwiftUIDemo.app */,
+				C94BDF3428E923A9008FB4DE /* Lytics SDK Showcase.app */,
 				C94BDF4428E923AB008FB4DE /* SwiftUIDemoTests.xctest */,
 				C94BDF4E28E923AB008FB4DE /* SwiftUIDemoUITests.xctest */,
 			);
@@ -228,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				C94BDF3B28E923AB008FB4DE /* Assets.xcassets */,
+				C9E2EC392A0EB33B00E915BC /* Launch Screen.storyboard */,
 				C9DE3E47290844F70047F502 /* events.json */,
 			);
 			path = Resources;
@@ -294,6 +299,7 @@
 				C9DE3E4D29085A330047F502 /* Collection+Utils.swift */,
 				C94BF00829097480007E1C25 /* Color+Assets.swift */,
 				C9DE3E40290735FA0047F502 /* Image+Assets.swift */,
+				C9E2EC3B2A0EBA5600E915BC /* String+LocalizedError.swift */,
 				C94BF00429096EA3007E1C25 /* Task+Utils.swift */,
 				C9C7602729819D32002E03D3 /* View+ErrorAlert.swift */,
 			);
@@ -331,7 +337,7 @@
 				C9178831296E3F5F009C2711 /* LyticsUI */,
 			);
 			productName = SwiftUIDemo;
-			productReference = C94BDF3428E923A9008FB4DE /* SwiftUIDemo.app */;
+			productReference = C94BDF3428E923A9008FB4DE /* Lytics SDK Showcase.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C94BDF4328E923AB008FB4DE /* SwiftUIDemoTests */ = {
@@ -424,6 +430,7 @@
 			files = (
 				C94BDF3F28E923AB008FB4DE /* Preview Assets.xcassets in Resources */,
 				C94BDF3C28E923AB008FB4DE /* Assets.xcassets in Resources */,
+				C9E2EC3A2A0EB33B00E915BC /* Launch Screen.storyboard in Resources */,
 				C9DE3E48290844F70047F502 /* events.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +460,7 @@
 				C9DE3E2829071D290047F502 /* EventsViewModel.swift in Sources */,
 				C9DE3E1C290717F30047F502 /* ProfileView.swift in Sources */,
 				C9DE3E2E29071E3E0047F502 /* RegisterViewModel.swift in Sources */,
+				C9E2EC3C2A0EBA5600E915BC /* String+LocalizedError.swift in Sources */,
 				C9DE3E2A29071E2D0047F502 /* EventDetailViewModel.swift in Sources */,
 				C9DE3E3E290734AB0047F502 /* EventService.swift in Sources */,
 				C94BF00929097480007E1C25 /* Color+Assets.swift in Sources */,
@@ -651,10 +659,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lytics SDK Showcase";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -662,8 +673,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lytics.SwiftUIDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lytics SDK Showcase";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -682,10 +692,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lytics SDK Showcase";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -693,8 +706,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lytics.SwiftUIDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lytics SDK Showcase";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

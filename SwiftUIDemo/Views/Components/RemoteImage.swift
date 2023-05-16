@@ -29,7 +29,7 @@ struct RemoteImage: View {
             } else {
                 Image(systemName: "photo")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: contentMode)
                     .foregroundColor(.gray)
                     .padding()
             }

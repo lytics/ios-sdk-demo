@@ -16,9 +16,8 @@ struct EventCard: View {
 
     var body: some View {
         VStack(spacing: 16) {
-            RemoteImage(url: imageURL, contentMode: .fill)
-                .frame(height: 120, alignment: .top)
-                .clipped()
+            RemoteImage(url: imageURL, contentMode: .fit)
+                .aspectRatio(CGSize(width: 2516, height: 1418), contentMode: .fit)
 
             VStack(alignment: .leading) {
                 VStack(alignment: .leading, spacing: 4) {
@@ -44,11 +43,20 @@ struct EventCard: View {
 
 struct EventCard_Previews: PreviewProvider {
     static var previews: some View {
-        EventCard(
-            title: Event.mock.artist.name,
-            subtitle: Event.mock.location,
-            imageURL: Event.mock.imageURL,
-            action: {})
-        .previewLayout(.sizeThatFits)
+        Group {
+            EventCard(
+                title: Event.mock.artist.name,
+                subtitle: Event.mock.location,
+                imageURL: Event.mock.imageURL,
+                action: {})
+            .previewLayout(.sizeThatFits)
+
+            EventCard(
+                title: Event.mock.artist.name,
+                subtitle: Event.mock.location,
+                imageURL: URL(string: "https://example.com")!,
+                action: {})
+            .previewLayout(.sizeThatFits)
+        }
     }
 }

@@ -13,44 +13,47 @@ struct EventsView: View {
 
     var body: some View {
         NavigationStack {
-            VStack {
-                if let featuredEvent = viewModel.featuredEvent {
-                    VStack {
-                        LocalEventsHeader(
-                            action: { print("See More ...") })
+            ScrollView {
+                VStack {
+                    if let featuredEvent = viewModel.featuredEvent {
+                        VStack {
+                            LocalEventsHeader(
+                                action: { print("See More ...") })
 
-                        EventCard(
-                            title: featuredEvent.artist.name,
-                            subtitle: featuredEvent.location,
-                            imageURL: featuredEvent.imageURL,
-                            action: {
-                                viewModel.buyTickets()
-                            })
+                            EventCard(
+                                title: featuredEvent.artist.name,
+                                subtitle: featuredEvent.location,
+                                imageURL: featuredEvent.imageURL,
+                                action: {
+                                    viewModel.buyTickets()
+                                })
+                        }
                     }
-                }
 
-                HStack {
-                    Text("Popular")
-                        .bold()
+                    HStack {
+                        Text("Popular")
+                            .bold()
+
+                        Spacer()
+                    }
+                    .padding(.top, 16)
+
+                    ForEach(viewModel.events) { event in
+                        NavigationLink(value: event) {
+                            EventRow(
+                                title: event.artist.name,
+                                subtitle: event.location,
+                                imageURL: event.imageURL)
+                        }
+                    }
+                    .navigationDestination(for: Event.self) { event in
+                        EventDetailView(viewModel: .init(eventService: .mock, event: event))
+                    }
 
                     Spacer()
                 }
-
-                ForEach(viewModel.events) { event in
-                    NavigationLink(value: event) {
-                        EventRow(
-                            title: event.artist.name,
-                            subtitle: event.location,
-                            imageURL: event.imageURL)
-                    }
-                }
-                .navigationDestination(for: Event.self) { event in
-                    EventDetailView(viewModel: .init(eventService: .mock, event: event))
-                }
-
-                Spacer()
+                .padding()
             }
-            .padding()
             .onAppear {
                 viewModel.fetchEvents()
             }
