@@ -1,7 +1,7 @@
 [
   {
     "id": 3,
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ante at turpis blandit eleifend. Suspendisse potenti. Aenean et lacus sed urna tincidunt fermentum ut at elit. Praesent a augue lorem. Orci varius natoque penatibus et magnis dis parturient montes.",
+    "details": "Join us for an unforgettable night as Grammy award-winning artist Alicia Keys takes the stage for a live concert. Known for her soulful voice and powerful lyrics, Alicia will perform her greatest hits, as well as new material from her latest album.",
     "dateTime": "March 18th @ 8 P.M.",
     "imageURL": "https://events.com/3",
     "location": "Austin, TX",
@@ -12,7 +12,7 @@
   },
   {
     "id": 4,
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ante at turpis blandit eleifend. Suspendisse potenti. Aenean et lacus sed urna tincidunt fermentum ut at elit. Praesent a augue lorem. Orci varius natoque penatibus et magnis dis parturient montes.",
+    "details": "Get ready for an epic night as Post Malone brings his chart-topping hits to the stage for a live concert. Known for his unique blend of hip-hop, rock, and pop, Post Malone has taken the music world by storm with his infectious beats and catchy lyrics.",
     "dateTime": "March 18th @ 8 P.M.",
     "imageURL": "https://events.com/4",
     "location": "Oklahoma City, OK",
@@ -23,7 +23,7 @@
   },
   {
     "id": 5,
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ante at turpis blandit eleifend. Suspendisse potenti. Aenean et lacus sed urna tincidunt fermentum ut at elit. Praesent a augue lorem. Orci varius natoque penatibus et magnis dis parturient montes.",
+    "details": "Get ready to dance the night away as Doja Cat brings her infectious beats and unique style to the stage for a live concert. With her chart-topping hits and energetic performances, Doja Cat has become one of the most exciting artists in the music industry today.",
     "dateTime": "March 18th @ 8 P.M.",
     "imageURL": "https://events.com/5",
     "location": "Houston, TX",
